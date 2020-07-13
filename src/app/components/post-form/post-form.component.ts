@@ -50,11 +50,11 @@ export class PostFormComponent implements OnInit {
       res => {
         console.log(res)
         this.isEdit = false
-        this.currentPost = {
-          id: null,
-          title: '',
-          body: ''
-        }
+        // this.currentPost = {
+        //   id: null,
+        //   title: '',
+        //   body: ''
+        // }
         this.updatedPost.emit(res)
       },
       error => { console.warn(error) }
